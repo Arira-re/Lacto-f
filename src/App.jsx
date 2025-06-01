@@ -1,7 +1,7 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
 import PostList from './components/PostList';
-
+import WeatherWidget from "./components/WeatherWidget";
 export default function App() {
   return (
     <>
@@ -13,6 +13,9 @@ export default function App() {
               ここはメインページですが、特に何かおいているわけではないです。<br />
               サイトに関しての概要などは<a href="About.html">こっち</a>にあります。
             </p>
+            <div>
+              <WeatherWidget />
+            </div>
             <h1 className="mg-t20 sm:text-4xl sm:leading-10">最近の投稿</h1>
             <PostList />
           </main>
