@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
     return (
         <header className="flex items-center justify-between">
@@ -8,20 +10,20 @@ export default function Header() {
                         width="48"
                         height="48"
                         className="rounded-full flex items-center"
-                        src="images/logo.jpg"
+                        src="/images/logo.jpg"
                         onError={(e) => {
                             e.target.onerror = null;
-                            e.target.src = 'images/logo.jpg';
+                            e.target.src = '/images/logo.jpg';
                         }}
                     />
                 </div>
                 <div id="main-text" className="flex items-center">
-                    <a href="index.html">Lacto-f</a>
+                    <Link to="/">Lacto-f</Link>
                 </div>
             </div>
             <div id="gl_navi" className="flex items-center">
-                <a className="mr-1" href="blog.html">Blog</a>
-                <a className="mr-1" href="about.html">About</a>
+                <Link className="mr-1" to="/blog">Blog</Link>
+                <Link className="mr-1" to="/about">About</Link>
             </div>
         </header>
     );
