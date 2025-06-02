@@ -17,7 +17,7 @@ const WeatherWidget = () => {
       try {
         const res = await fetch(
           // Django(バックエンド)から天気情報を取得
-          `http://localhost:8000/api/weatheracity_id=${cityId}`
+          `http://localhost:8000/api/weather/?city_id=${cityId}`
         );
         // error
         if (!res.ok) {

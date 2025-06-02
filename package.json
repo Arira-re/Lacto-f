@@ -42,11 +42,11 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Arira-re/test.git"
+    "url": "git+https://github.com/Arira-re/Lacto-f.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Arira-re/test/issues"
+    "url": "https://github.com/Arira-re/Lacto-f/issues"
   }
 }
