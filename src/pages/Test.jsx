@@ -1,4 +1,5 @@
 import WeatherWidget from "../components/WeatherWidget";
+import SpotifyPlaylist from "../components/SpotifyPlaylist";
 export default function Test() {
     return (
         <main>
@@ -7,7 +8,19 @@ export default function Test() {
             <div>
                 <WeatherWidget />
             </div>
-            <h2 className="sm:text-3xl sm:leading-10">好きな曲</h2>
+            <SpotifyPlaylist />
+            <p>ただAPIをわざわざつかわなくても公式がiframe用意してるからそれでいい気がする(本末転倒)</p>
+            <iframe
+                style={{ borderRadius: "12px" }}
+                src="https://open.spotify.com/embed/playlist/5PSEeORl3t4ythWQP50nhP?utm_source=generator&theme=0"
+                width="100%"
+                height="352"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                title="マジで意味ない"
+                allowFullScreen // ← ここを追加、または属性として明記
+            ></iframe>            <h2 className="sm:text-3xl sm:leading-10">好きな曲</h2>
             <iframe
                 className="mg-bt05"
                 width="560"

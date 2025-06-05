@@ -41,7 +41,7 @@ const WeatherWidget = () => {
           if (!cityId) setError("都市を選択してください");
         }}
       >
-        <label>
+        <label className="selectbox">
           都市:
           <select
             value={cityId}// cityID(json)から選択
