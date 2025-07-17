@@ -18,9 +18,21 @@ export default function Test() {
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
-                title="マジで意味ない"
+                title="Spotify Playlist1"
                 allowFullScreen // ← ここを追加、または属性として明記
-            ></iframe>            <h2 className="sm:text-3xl sm:leading-10">好きな曲</h2>
+            ></iframe>
+            <iframe
+                style={{ borderRadius: "12px" }}
+                src="https://open.spotify.com/embed/playlist/2NagUPdWpDdi6uVVzc4UOf?utm_source=generator"
+                width="100%"
+                height="352"
+                frameBorder="0"
+                allowfullscreen
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                title="Spotify Playlist2"
+                loading="lazy">
+            </iframe>
+            <h2 className="sm:text-3xl sm:leading-10">好きな曲</h2>
             <iframe
                 className="mg-bt05"
                 width="560"
@@ -57,8 +69,8 @@ export default function Test() {
             <h2 className="sm:text-3xl sm:leading-10">VR</h2>
             <video
                 className="mg-bt05"
-                width="560"
-                height="315"
+                width="100%"
+                height="100%"
                 src="images/100.mp4"
                 controls
             ></video>
